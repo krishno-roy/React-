@@ -14,3 +14,6 @@ Add the Tailwind directives to your CSS
 
 Start the Tailwind CLI build process
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+
+https://tailwindcss.com/docs/installation 
