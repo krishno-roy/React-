@@ -1,0 +1,16 @@
+Install Tailwind CSS
+npm install -D tailwindcss
+npx tailwindcss init
+
+Add the paths to all of your template files in your tailwind.config.js file.
+  content: ["./src/**/*.{html,js}"],
+
+
+Add the Tailwind directives to your CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+Start the Tailwind CLI build process
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
