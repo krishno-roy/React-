@@ -1,0 +1,4 @@
+Fist you run this code on your cmd 
+npm create vite@latest
+secend you run the coe 
+npm create vite@latest my-vue-app -- --template vue
