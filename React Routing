@@ -1,0 +1,8 @@
+import { createBrowserRouter } from "react-router-dom";
+import Deshboard from "./component/Deshboard";
+import About from "./component/About";
+const router = createBrowserRouter([
+  { path: "/", element: <home /> },
+  { path: "/about", element: <About /> },
+  { path: "/deshboard", element: <Deshboard /> },
+]);
