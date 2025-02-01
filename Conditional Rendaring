@@ -1,0 +1,48 @@
+import React from 'react'
+import AdminPannel from './Componets/AdminPannel'
+import LogIn from './Componets/LogIn'
+
+export const App = () => {
+  const isLoggedIn = true; //booled value
+  let content;
+if (isLoggedIn){
+  content = <AdminPannel />;
+}else{
+content = <LogIn />;
+}
+  return (
+    <div>
+    {content} 
+    </div>
+  );
+}
+
+export default App
+
+
+
+
+
+or 
+
+
+
+
+
+import React from 'react'
+import AdminPannel from './Componets/AdminPannel'
+import LogIn from './Componets/LogIn'
+
+export const App = () => {
+  const isLoggedIn = false; //booled value
+ 
+  return (
+    <div className='p-8'>
+    {
+      isLoggedIn ? (<AdminPannel/>) :(<LogIn/>)
+    }
+    </div>
+  );
+}
+
+export default App
