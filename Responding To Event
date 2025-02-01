@@ -1,0 +1,20 @@
+import React from 'react'
+
+const handleClick =() =>{
+  alert("You Click Me")
+}
+
+const App = () => {
+  return (
+    <div className="p-7">
+      <button
+        onClick={handleClick}
+        className=" py-2 px-4 bg-amber-300 rounded-full hover:bg-amber-200"
+      >
+        Click Me
+      </button>
+    </div>
+  );
+}
+
+export default App
