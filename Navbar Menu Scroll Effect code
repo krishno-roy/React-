@@ -1,0 +1,25 @@
+  const [isMenuScroll, setIsMenuScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsMenuScroll(true);
+      } else {
+        setIsMenuScroll(false);
+      }
+    };
+
+    // Add the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
+
+/////////////////////////////// Conditon ///////////////// under the div //////////
+${ isMenuScroll ? "bg-white shadow-md text-black" : "bg-transparent text-white"}`
+
